@@ -1,0 +1,41 @@
+@import 'config';
+@import 'home';
+
+body {
+background: $primary-color;
+color: set-text-color($primary-color);
+height: 100vh;
+font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+line-height: 1;
+}
+
+h1,h2,h3 {
+    font-weight: 400;
+}
+
+a{
+    color: set-text-color($primary-color);
+    text-decoration:none;
+    @include transition-ease
+}
+
+main {
+    height: 100%;
+    width: 100%;
+
+    .social-icons{
+        position: fixed;
+        bottom: 1rem;
+        left: 34rem;
+        margin-bottom: 10%;
+
+        a{
+            padding: 0.4rem;
+
+            &:hover{
+                color: $other-color;
+            }
+        }
+    }
+
+}
